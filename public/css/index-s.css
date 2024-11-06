@@ -376,6 +376,7 @@ p{
     }
 
     .blog-content{
+        margin-left: 5px;
         margin-bottom: -20px;
         flex-direction: column;
     }
