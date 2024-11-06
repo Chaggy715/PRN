@@ -249,7 +249,7 @@ p{
 .general-content h2{
     margin-top: -30px;
     font-size: 70px;
-    line-height: 70px;
+    line-height: 60px;
     color: #d3cfbc;
     text-transform: uppercase;
     padding: 0 200px;
@@ -341,11 +341,11 @@ p{
     .header-content h1{
         margin-top: 85px;
         margin-bottom: 50px;
-        font-size: 250px;
+        font-size: 200px;
     }
 
     .header-content p{
-        font-size: 30px;
+        font-size: 25px;
         padding: 0;
         margin-bottom: -40px;
     }
@@ -356,8 +356,9 @@ p{
 
     .coffee-content h2{
         margin-top: 10px;
-        font-size: 50px;
+        font-size: 40px;
         padding: 0;
+        line-height: 50px;
     }
     
     .coffee-content img{
@@ -385,12 +386,14 @@ p{
     }
 
     .blog-content p{
+        font-size: 20px;
         margin-bottom: 60px;
     }
 
     .blog h2{
         margin-top: 10px;
-        font-size: 50px;
+        line-height: 50px;
+        font-size: 40px;
         margin-bottom: 30px;
     }
 
@@ -408,7 +411,8 @@ p{
 
     .services-content h2{
         margin-top: 10px;
-        font-size: 50px;
+        line-height: 50px;
+        font-size: 40px;
         margin-bottom: 20px;
     }
 
