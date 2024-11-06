@@ -418,7 +418,7 @@ p{
     }
 
     .services-group{
-        margin-left: 10px;
+        margin-left: -5px;
         flex-direction: column;
         margin-bottom: 0;
     }
