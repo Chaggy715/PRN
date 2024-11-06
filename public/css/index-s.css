@@ -261,7 +261,41 @@ p{
     font-size: 30px;
     color: #d3cfbc;
     padding: 0 100px;
-    margin-bottom: -40px;
+    margin-bottom: 100px;
+}
+
+.gente{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* Ajusta el ancho según tu diseño */
+    margin: 0 auto; /* Centra el contenedor */
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: -60px
+}
+
+.gente-1{
+    flex: 1 1 30%; /* Cada elemento ocupa aproximadamente el 30% del ancho del contenedor */
+    min-width: 300px; /* Ajusta el mínimo según lo necesites */
+    padding: 10px;
+    text-align: center;
+    padding: 15px 0px;
+    margin-bottom: -20px;
+}
+
+.gente-1 img{
+    width: 300px;
+}
+
+.gente-1 h2{
+    margin-top: -35px;
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+
+.gente p{
+    font-size: 22px;
 }
 
 .footer{
@@ -399,7 +433,7 @@ p{
     }
     
     .general-content img{
-        width: 400px;
+        width: 300px;
     }
     
     .txto-p{
@@ -408,6 +442,24 @@ p{
         margin-bottom: 0px;
     }
 
+    .gente{
+        margin-bottom: 10px;
+    }
+
+    .gente-1 h2{
+        margin-top: 30px;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .gente-1 p{
+        margin-top: 30px;
+    }
+
+    .gente-1 img{
+        width: 200px;
+        margin-bottom: -10px;
+    }
 
     .footer{
         padding: 20px;
