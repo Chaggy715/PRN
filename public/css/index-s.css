@@ -231,6 +231,43 @@ p{
     font-size: 25px;
 }
 
+.MV{
+    display: flex;
+}
+
+.MV h2{
+    font-size: 65px;
+    margin-top: -30px;
+    color: #036d22;
+}
+
+.MV p{
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+.MV-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #d3cfbc;
+}
+
+.MV-2{
+    background-image: url(/public/images/poder\ judicial.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.MV-3{
+    background-image: url(/public/images/union.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
 .general{
     padding: 100px 0;
     background-color: #c00c27;
@@ -244,6 +281,9 @@ p{
 .general-content img{
     width: 550px;
     border-radius: 80px;
+    border: 10px solid;
+    border-color: #036d22;
+    box-shadow: 7px 7px 10px #000000;
 }
 
 .general-content h2{
@@ -252,16 +292,24 @@ p{
     line-height: 60px;
     color: #d3cfbc;
     text-transform: uppercase;
-    padding: 0 200px;
     margin-bottom: 60px;
 }
 
+#candidato-t{
+    text-shadow: 3px 3px 3px #036d22;
+}
+
+#candidato-p{
+    text-shadow: 2px 2px 1px #036d22;
+}
+
+
 .txto-p{
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 30px;
     color: #d3cfbc;
     padding: 0 100px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .gente{
@@ -271,7 +319,7 @@ p{
     margin: 0 auto; /* Centra el contenedor */
     justify-content: space-between;
     text-align: center;
-    margin-bottom: -60px
+    margin-bottom: -100px
 }
 
 .gente-1{
@@ -285,11 +333,13 @@ p{
 
 .gente-1 img{
     width: 300px;
+    border: 5px solid;
+    border-color: #036d22;
 }
 
 .gente-1 h2{
     margin-top: -35px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-size: 50px;
 }
 
@@ -423,8 +473,30 @@ p{
         margin-bottom: 0;
     }
 
-    .services-1{
-        margin-bottom: px;
+    .MV{
+        flex-direction: column;
+    }
+
+    .MV h2{
+        margin-top: 10px;
+        margin-bottom: -25px;
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .MV p{
+        font-size: 20px;
+    }
+
+    .MV-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .MV-2, .MV-3{
+        display: none;
+        background-color: #d3cfbc;
     }
 
     .general{
