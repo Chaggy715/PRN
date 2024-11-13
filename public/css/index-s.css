@@ -350,6 +350,48 @@ p{
     font-size: 22px;
 }
 
+.P{
+    display: flex;
+}
+
+.P h2{
+    font-size: 65px;
+    margin-top: -30px;
+    color: #036d22;
+}
+
+.P p{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.P-1{
+    text-align: center;
+    width: 50%;
+    padding: 100px 100px 100px 100px;
+    background-color: #d3cfbc;
+}
+
+.P-2{
+    text-align: center;
+    width: 100%;
+    padding: 100px 100px 100px 100px;
+    background-color: #d3cfbc;
+}
+
+.PT{
+    text-align: center;
+    width: 100%;
+    padding: 100px 100px 30px 100px;
+    background-color: #d3cfbc;
+}
+
+.PT h2{
+    color: #036d22;
+    text-shadow: 2px 2px 4px #c00c27;
+}
+
 .footer{
     padding: 40px 0;
     background-color: #000000;
