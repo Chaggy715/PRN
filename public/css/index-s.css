@@ -1,619 +1,643 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: "Merriweather", sans-serif;
-    background-color: #036d22;
+body {
+  font-family: "Merriweather", sans-serif;
+  background-color: #036d22;
 }
 
-h1{
-    font-family: "Bebas Neue", sans-serif;
+h1 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
-.container{
-    max-width: 1300px;
-    margin: 0 auto;
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.header{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/public/images/fondo.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 0px;
-    min-height: 65vh;
-    display: flex;
-    align-items: center;
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/public/images/fondo.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 0px;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
 }
 
-.menu{
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  border-radius: 12px;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: #d3cfbc;
+  display: block;
+  font-weight: 700;
+}
+
+.menu .navbar ul li a:hover {
+  color: #8f8c7f;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 350px;
+  line-height: 170px;
+  color: #d3cfbc;
+  margin-bottom: 75px;
+  margin-top: 170px;
+}
+
+.header-content p {
+  font-size: 40px;
+  color: #d3cfbc;
+  padding: 0 250px;
+  margin-bottom: 35px;
+}
+
+.coffee {
+  padding: 100px 0;
+  background-color: #d3cfbc;
+  position: relative;
+}
+
+.coffee-content {
+  text-align: center;
+}
+
+.coffee-content h2 {
+  margin-top: -20px;
+  font-size: 70px;
+  line-height: 70px;
+  color: #036d22;
+  text-transform: uppercase;
+  padding: 0 200px;
+  margin-bottom: -8px;
+}
+
+.txt-p {
+  margin-top: -12px;
+  font-size: 30px;
+  color: #414247;
+  padding: 0 200px;
+  margin-bottom: -40px;
+}
+h2 {
+  font-size: 70px;
+  line-height: 70px;
+  color: #323337;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #414247;
+  margin: 25px 0 45px 0;
+}
+
+.blog {
+  background-color: #036d22;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.blog h2 {
+  margin-top: -35px;
+  margin-bottom: 60px;
+  color: #d3cfbc;
+  text-shadow: 3px 3px #c00c27;
+}
+
+.blog p {
+  font-size: 22px;
+  color: #d3cfbc;
+}
+
+.blog-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%; /* Ajusta el ancho según tu diseño */
+  margin: 0 auto; /* Centra el contenedor */
+  justify-content: space-between;
+  margin-bottom: -60px;
+}
+
+.blog-1 {
+  flex: 1 1 30%; /* Cada elemento ocupa aproximadamente el 30% del ancho del contenedor */
+  min-width: 300px; /* Ajusta el mínimo según lo necesites */
+  padding: 10px;
+  text-align: center;
+  padding: 15px 55px;
+  margin-bottom: -20px;
+}
+
+.blog-1 h3 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #d3cfbc;
+  text-shadow: 3px 3px #c00c27;
+}
+.services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/images/Lupa.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.services-content {
+  text-align: center;
+}
+
+.services-content h2 {
+  font-size: 70px;
+  line-height: 70px;
+  color: #d3cfbc;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: -20px;
+}
+
+.services-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%; /* Ajusta el ancho según tu diseño */
+  margin: 0 auto; /* Centra el contenedor */
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+
+.services-1 {
+  flex: 1 1 30%; /* Cada elemento ocupa aproximadamente el 30% del ancho del contenedor */
+  min-width: 300px; /* Ajusta el mínimo según lo necesites */
+  padding: 20px;
+  text-align: center;
+  padding: 22px 55px;
+  margin-bottom: -20px;
+}
+
+.services-1 h3 {
+  color: #d3cfbc;
+  font-size: 25px;
+}
+
+.MV {
+  display: flex;
+}
+
+.MV h2 {
+  font-size: 65px;
+  margin-top: -30px;
+  color: #036d22;
+}
+
+.MV p {
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+.MV-1 {
+  width: 50%;
+  padding: 100px 250px 100px 100px;
+  background-color: #d3cfbc;
+}
+
+.MV-2 {
+  background-image: url(/public/images/poder\ judicial.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.MV-3 {
+  background-image: url(/public/images/union.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.general {
+  padding: 100px 0;
+  background-color: #c00c27;
+  position: relative;
+}
+
+.general-content {
+  text-align: center;
+}
+
+.general-content img {
+  width: 550px;
+  border-radius: 80px;
+  border: 10px solid;
+  border-color: #036d22;
+  box-shadow: 7px 7px 10px #000000;
+}
+
+.general-content h2 {
+  margin-top: -30px;
+  font-size: 70px;
+  line-height: 60px;
+  color: #d3cfbc;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+#candidato-t {
+  text-shadow: 3px 3px 3px #036d22;
+}
+
+#candidato-p {
+  text-shadow: 2px 2px 1px #036d22;
+}
+
+.txto-p {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #d3cfbc;
+  padding: 0 100px;
+  margin-bottom: 80px;
+}
+
+.gente {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; /* Ajusta el ancho según tu diseño */
+  margin: 0 auto; /* Centra el contenedor */
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: -100px;
+}
+
+.gente-1 {
+  flex: 1 1 30%; /* Cada elemento ocupa aproximadamente el 30% del ancho del contenedor */
+  min-width: 300px; /* Ajusta el mínimo según lo necesites */
+  padding: 10px;
+  text-align: center;
+  padding: 15px 0px;
+  margin-bottom: -20px;
+}
+
+.gente-1 img {
+  width: 300px;
+  border: 5px solid;
+  border-color: #036d22;
+}
+
+.gente-1 h2 {
+  margin-top: -35px;
+  margin-bottom: 30px;
+  line-height: 55px;
+  font-size: 50px;
+}
+
+.gente p {
+  font-size: 22px;
+}
+
+.P {
+  display: flex;
+}
+
+.P h2 {
+  font-size: 65px;
+  margin-top: -30px;
+  color: #036d22;
+}
+
+.P p {
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+.P-1 {
+  text-align: center;
+  width: 50%;
+  padding: 100px 100px 30px 100px;
+  background-color: #d3cfbc;
+}
+
+.P-2 {
+  text-align: center;
+  width: 100%;
+  padding: 100px 100px 100px 100px;
+  background-color: #d3cfbc;
+}
+
+.PT {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 100px 100px 100px 100px;
+  background-color: #d3cfbc;
+}
+
+.PT h2 {
+  color: #036d22;
+  text-shadow: 2px 2px 4px #c00c27;
+}
+
+.Fin {
+  margin-top: 80px;
+  font-size: 25px;
+  margin-bottom: -80px;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #000000;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
     position: absolute;
-    top: 20px;
+    top: 100%;
     left: 0;
     right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo img{
-    border-radius: 12px;
-}
-
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li a{
-    font-size: 20px;
-    padding: 20px;
-    color: #d3cfbc;
-    display: block;
-    font-weight: 700;
-}
-
-.menu .navbar ul li a:hover{
-    color: #8f8c7f;
-}
-
-#menu{
+    background-color: #323337;
     display: none;
-}
+  }
 
-.menu-icono{
-    width: 25px;
-}
+  .menu .navbar ul li {
+    width: 100%;
+  }
 
-.menu label{
-    cursor: pointer;
-    display: none;
-}
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
 
-.header-content{
-    text-align: center;
-}
+  .header {
+    min-height: 0vh;
+  }
 
-.header-content h1{
-    font-size: 350px;
-    line-height: 170px;
-    color: #d3cfbc;
-    margin-bottom: 75px;
-    margin-top: 170px;
-}
+  .header-content {
+    padding: 100px 30px;
+  }
 
-.header-content p{
-    font-size: 40px;
-    color: #d3cfbc;
-    padding: 0 250px;
-    margin-bottom: 35px;
-}
-
-.coffee{
-    padding: 100px 0;
-    background-color: #d3cfbc;
-    position: relative;
-}
-
-.coffee-content{
-    text-align: center;
-}
-
-.coffee-content h2{
-    margin-top: -20px;
-    font-size: 70px;
-    line-height: 70px;
-    color: #036d22;
-    text-transform: uppercase;
-    padding: 0 200px;
-    margin-bottom: -8px;
-}
-
-.txt-p{
-    margin-top: -12px;
-    font-size: 30px;
-    color: #414247;
-    padding: 0 200px;
-    margin-bottom: -40px;
-}
-h2{
-    font-size: 70px;
-    line-height: 70px;
-    color: #323337;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-p{
-    font-size: 16px;
-    color: #414247;
-    margin: 25px 0 45px 0;
-}
-
-.blog{
-    background-color: #036d22;
-    background-size: cover;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.blog h2{
-    margin-top: -35px;
-    margin-bottom: 60px;
-    color: #d3cfbc;
-    text-shadow: 3px 3px #c00c27;
-}
-
-.blog p{
-    font-size: 22px;
-    color: #d3cfbc;
-}
-
-.blog-content{
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%; /* Ajusta el ancho según tu diseño */
-    margin: 0 auto; /* Centra el contenedor */
-    justify-content: space-between;
-    margin-bottom: -60px
-}
-
-.blog-1{
-    flex: 1 1 30%; /* Cada elemento ocupa aproximadamente el 30% del ancho del contenedor */
-    min-width: 300px; /* Ajusta el mínimo según lo necesites */
-    padding: 10px;
-    text-align: center;
-    padding: 15px 55px;
-    margin-bottom: -20px;
-}
-
-.blog-1 h3{
-    font-size: 40px;
-    font-weight: 800;
-    color: #d3cfbc;
-    text-shadow: 3px 3px #c00c27;
-}
-.services{
-    background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url("/public/images/Lupa.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 0;
-}
-
-.services-content{
-    text-align: center;
-}
-
-.services-content h2{
-    font-size: 70px;
-    line-height: 70px;
-    color: #d3cfbc;
-    text-transform: uppercase;
+  .header-content h1 {
+    margin-top: 85px;
     margin-bottom: 50px;
-    margin-top: -20px;
-}
+    font-size: 200px;
+  }
 
-.services-group{
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%; /* Ajusta el ancho según tu diseño */
-    margin: 0 auto; /* Centra el contenedor */
-    justify-content: space-between;
-    margin-bottom: -20px
-}
-
-.services-1{
-    flex: 1 1 30%; /* Cada elemento ocupa aproximadamente el 30% del ancho del contenedor */
-    min-width: 300px; /* Ajusta el mínimo según lo necesites */
-    padding: 20px;
-    text-align: center;
-    padding: 22px 55px;
-    margin-bottom: -20px;
-}
-
-.services-1 h3{
-    color: #d3cfbc;
+  .header-content p {
     font-size: 25px;
-}
+    padding: 0;
+    margin-bottom: -40px;
+  }
 
-.MV{
-    display: flex;
-}
+  .coffee {
+    padding: 30px;
+  }
 
-.MV h2{
-    font-size: 65px;
-    margin-top: -30px;
-    color: #036d22;
-}
+  .coffee-content h2 {
+    margin-top: 10px;
+    font-size: 40px;
+    padding: 0;
+    line-height: 50px;
+  }
 
-.MV p{
-    margin-top: 50px;
-    font-size: 20px;
-    margin-bottom: -10px;
-}
-
-.MV-1{
-    width: 50%;
-    padding: 100px 250px 100px 100px;
-    background-color: #d3cfbc;
-}
-
-.MV-2{
-    background-image: url(/public/images/poder\ judicial.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-}
-
-.MV-3{
-    background-image: url(/public/images/union.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-}
-
-.general{
-    padding: 100px 0;
-    background-color: #c00c27;
-    position: relative;
-}
-
-.general-content{
-    text-align: center;
-}
-
-.general-content img{
-    width: 550px;
-    border-radius: 80px;
-    border: 10px solid;
-    border-color: #036d22;
-    box-shadow: 7px 7px 10px #000000;
-}
-
-.general-content h2{
-    margin-top: -30px;
-    font-size: 70px;
-    line-height: 60px;
-    color: #d3cfbc;
-    text-transform: uppercase;
-    margin-bottom: 60px;
-}
-
-#candidato-t{
-    text-shadow: 3px 3px 3px #036d22;
-}
-
-#candidato-p{
-    text-shadow: 2px 2px 1px #036d22;
-}
-
-
-.txto-p{
-    margin-top: 30px;
-    font-size: 30px;
-    color: #d3cfbc;
-    padding: 0 100px;
-    margin-bottom: 80px;
-}
-
-.gente{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%; /* Ajusta el ancho según tu diseño */
-    margin: 0 auto; /* Centra el contenedor */
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: -100px
-}
-
-.gente-1{
-    flex: 1 1 30%; /* Cada elemento ocupa aproximadamente el 30% del ancho del contenedor */
-    min-width: 300px; /* Ajusta el mínimo según lo necesites */
-    padding: 10px;
-    text-align: center;
-    padding: 15px 0px;
-    margin-bottom: -20px;
-}
-
-.gente-1 img{
+  .coffee-content img {
     width: 300px;
-    border: 5px solid;
-    border-color: #036d22;
-}
+  }
 
-.gente-1 h2{
-    margin-top: -35px;
-    margin-bottom: 30px;
-    line-height: 55px;
-    font-size: 50px;
-}
+  .txt-p {
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
 
+  .blog {
+    padding: 30px;
+  }
 
-.gente p{
-    font-size: 22px;
-}
+  .blog-content {
+    margin-left: 10px;
+    margin-bottom: -20px;
+    flex-direction: column;
+  }
 
-.P{
-    display: flex;
-}
-
-.P h2{
-    font-size: 65px;
-    margin-top: -30px;
-    color: #036d22;
-}
-
-.P p{
-    margin-top: 50px;
-    font-size: 20px;
+  .blog-content h3 {
+    font-size: 25px;
     margin-bottom: -10px;
-}
+  }
 
-.P-1{
-    text-align: center;
-    width: 50%;
-    padding: 100px 100px 30px 100px;
-    background-color: #d3cfbc;
-}
+  .blog-content p {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
 
-.P-2{
-    text-align: center;
+  .blog h2 {
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .blog-1 {
+    padding: 0;
+  }
+
+  .services {
+    padding: 30px;
+  }
+
+  .services-content h3 {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .services-content h2 {
+    margin-top: 10px;
+    line-height: 50px;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .services-group {
+    margin-left: 0px;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .MV {
+    flex-direction: column;
+  }
+
+  .MV h2 {
+    margin-top: 10px;
+    margin-bottom: -25px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .MV p {
+    font-size: 20px;
+  }
+
+  .MV-1 {
     width: 100%;
-    padding: 100px 100px 100px 100px;
-    background-color: #d3cfbc;
-}
-
-.PT{
+    padding: 30px;
     text-align: center;
-    width: 100%;
-    padding: 100px 100px 30px 100px;
+  }
+
+  .MV-2,
+  .MV-3 {
+    display: none;
     background-color: #d3cfbc;
-}
+  }
 
-.PT h2{
-    color: #036d22;
-    text-shadow: 2px 2px 4px #c00c27;
-}
+  .general {
+    padding: 30px;
+  }
 
-.footer{
-    padding: 40px 0;
-    background-color: #000000;
-}
+  .general-content h2 {
+    margin-top: 10px;
+    font-size: 50px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
 
-@media(max-width:991px){
+  .general-content img {
+    width: 300px;
+  }
 
-    .menu{
-        padding: 30px;
-    }
+  .txto-p {
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
 
-    .menu label{
-        display: initial;
-    }
+  .gente {
+    margin-bottom: 10px;
+  }
 
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #323337;
-        display: none;
-    }
+  .gente-1 h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
 
-    .menu .navbar ul li{
-        width: 100%;
-    }
+  .gente-1 p {
+    margin-top: 30px;
+  }
 
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
+  .gente-1 img {
+    width: 200px;
+    margin-bottom: -10px;
+  }
 
-    .header{
-        min-height: 0vh;
-    }
+  .P {
+    flex-direction: column;
+  }
 
-    .header-content{
-        padding: 100px 30px;
-    }
+  .PT{
+    text-align: center;
+  }
 
-    .header-content h1{
-        margin-top: 85px;
-        margin-bottom: 50px;
-        font-size: 200px;
-    }
+  .PT h2{
+    margin-top: -60px;
+    font-size: 40px;
+    margin-bottom: -80px;
+  }
 
-    .header-content p{
-        font-size: 25px;
-        padding: 0;
-        margin-bottom: -40px;
-    }
+  .P h2 {
+    margin-top: 10px;
+    margin-bottom: -25px;
+    font-size: 35px;
+    padding: 0;
+    line-height: 55px;
+  }
 
-    .coffee{
-        padding: 30px;
-    }
+  .P-1 {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
 
-    .coffee-content h2{
-        margin-top: 10px;
-        font-size: 40px;
-        padding: 0;
-        line-height: 50px;
-    }
-    
-    .coffee-content img{
-        width: 300px;
-    }
-    
-    .txt-p{
-        padding: 0;
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
+  .P-1 p {
+    font-size: 18px;
+  }
 
-    .blog{
-        padding: 30px;
-    }
+  .P-2 {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
 
-    .blog-content{
-        margin-left: 10px;
-        margin-bottom: -20px;
-        flex-direction: column;
-    }
+  .P-2 p {
+    font-size: 18px;
+  }
 
-    .blog-content h3{
-        font-size: 25px;
-        margin-bottom: -10px;
-    }
+  .Fin {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
 
-    .blog-content p{
-        font-size: 20px;
-        margin-bottom: 60px;
-    }
-
-    .blog h2{
-        margin-top: 10px;
-        line-height: 50px;
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
-
-    .blog-1{
-        padding: 0;
-    }
-    
-    .services{
-        padding: 30px;
-    }
-
-    .services-content h3{
-        margin-left: 10px;
-        font-size: 25px;
-    }
-
-    .services-content h2{
-        margin-top: 10px;
-        line-height: 50px;
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-
-    .services-group{
-        margin-left: 0px;
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
-
-    .MV{
-        flex-direction: column;
-    }
-
-    .MV h2{
-        margin-top: 10px;
-        margin-bottom: -25px;
-        font-size: 50px;
-        line-height: 55px;
-    }
-
-    .MV p{
-        font-size: 20px;
-    }
-
-    .MV-1{
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .MV-2, .MV-3{
-        display: none;
-        background-color: #d3cfbc;
-    }
-
-    .general{
-        padding: 30px;
-    }
-
-    .general-content h2{
-        margin-top: 10px;
-        font-size: 50px;
-        padding: 0;
-        margin-bottom: 40px;
-    }
-    
-    .general-content img{
-        width: 300px;
-    }
-    
-    .txto-p{
-        padding: 0;
-        font-size: 18px;
-        margin-bottom: 0px;
-    }
-
-    .gente{
-        margin-bottom: 10px;
-    }
-
-    .gente-1 h2{
-        margin-top: 30px;
-        font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 10px;
-    }
-
-    .gente-1 p{
-        margin-top: 30px;
-    }
-
-    .gente-1 img{
-        width: 200px;
-        margin-bottom: -10px;
-    }
-
-    .P{
-        flex-direction: column;
-    }
-
-    .PT h2{
-        margin-top: 10px;
-        font-size: 50px;
-        padding: 0;
-        margin-bottom: 40px;
-    }
-
-    .P h2{
-        margin-top: 10px;
-        margin-bottom: -25px;
-        font-size: 50px;
-        line-height: 55px;
-    }
-
-    .P-1{
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .P-2{
-
-    }
-
-    .footer{
-        padding: 20px;
-    }
+  .footer {
+    padding: 20px;
+  }
 }
