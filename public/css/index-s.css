@@ -606,16 +606,16 @@ p {
   }
 
   .PI h2 {
-    margin-top: 5px;
-    font-size: 40px;
+    margin-top: -10px;
+    font-size: 35px;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .P h2 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: -25px;
-    font-size: 35px;
+    font-size: 30px;
     padding: 0;
     line-height: 55px;
   }
