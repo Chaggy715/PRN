@@ -611,14 +611,14 @@ p {
 
   .PT h2 {
     margin-top: -60px;
-    font-size: 35px;
-    margin-bottom: -80px;
-    margin-left: -10px;
+    line-height: 50px;
+    font-size: 30px;
+    margin-bottom: -40px;
   }
 
   .P h2 {
-    margin-top: 10px;
-    margin-bottom: -25px;
+    margin-top: -15px;
+    margin-bottom: -30px;
     font-size: 25px;
     padding: 0;
     line-height: 55px;
