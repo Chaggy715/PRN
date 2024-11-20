@@ -343,7 +343,13 @@
         </div>
     </section>
 
+    <script>
+        const yearSpan = document.getElementById('year');
+        yearSpan.textContent = new Date().getFullYear();
+    </script>
+
     <footer class="footer">
+        &copy; <span id="year"></span> Salvador Jiménez Hdez de la C. Todos los derechos reservados.
     </footer>
 
 </body>

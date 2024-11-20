@@ -377,6 +377,11 @@ p {
   background-color: #d3cfbc;
 }
 
+.PI{
+  margin-top: -40px;
+  margin-bottom: -80px;
+}
+
 .PT {
   display: flex;
   flex-direction: column;
@@ -398,7 +403,8 @@ p {
 }
 
 .footer {
-  padding: 40px 0;
+  padding: 40px 40px 40px 40px;
+  color: white;
   background-color: #000000;
 }
 
@@ -594,6 +600,11 @@ p {
     flex-direction: column;
   }
 
+.PI{
+  margin-top: 0;
+  margin-bottom: -30px;
+}
+
   .PT{
     text-align: center;
   }
@@ -607,7 +618,7 @@ p {
   .P h2 {
     margin-top: 10px;
     margin-bottom: -25px;
-    font-size: 35px;
+    font-size: 30px;
     padding: 0;
     line-height: 55px;
   }
@@ -638,6 +649,6 @@ p {
   }
 
   .footer {
-    padding: 20px;
+    padding: 40px;
   }
 }
