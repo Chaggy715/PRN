@@ -352,7 +352,7 @@ p {
 }
 
 .P h2 {
-  font-size: 65px;
+  font-size: 50px;
   margin-top: -30px;
   color: #036d22;
 }
@@ -378,22 +378,23 @@ p {
 }
 
 .PI {
-  margin-top: -40px;
-  margin-bottom: -80px;
-}
-
-.PT {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  width: 100%;
-  padding: 100px 100px 100px 100px;
+  margin-bottom: -40px;
+  padding: 50px 0;
   background-color: #d3cfbc;
+  position: relative;
 }
 
-.PT h2 {
+.PI h2 {
+  margin-top: -30px;
+  font-size: 70px;
+  line-height: 60px;
   color: #036d22;
-  text-shadow: 2px 2px 4px #c00c27;
+  text-transform: uppercase;
+}
+
+#PI-t {
+  text-shadow: 3px 3px 5px #c00c27;
 }
 
 .Fin {
@@ -601,26 +602,20 @@ p {
   }
 
   .PI {
-    margin-top: 0;
-    margin-bottom: -30px;
+    padding: 30px;
   }
 
-  .PT {
-    text-align: center;
-  }
-
-  .PT h2 {
-    margin-left: -10px;
-    margin-top: -60px;
-    line-height: 50px;
-    font-size: 30px;
-    margin-bottom: -40px;
+  .PI h2 {
+    margin-top: 5px;
+    font-size: 50px;
+    padding: 0;
+    margin-bottom: 40px;
   }
 
   .P h2 {
-    margin-top: -15px;
-    margin-bottom: -30px;
-    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: -25px;
+    font-size: 40px;
     padding: 0;
     line-height: 55px;
   }
