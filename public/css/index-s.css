@@ -377,7 +377,7 @@ p {
   background-color: #d3cfbc;
 }
 
-.PI{
+.PI {
   margin-top: -40px;
   margin-bottom: -80px;
 }
@@ -600,25 +600,25 @@ p {
     flex-direction: column;
   }
 
-.PI{
-  margin-top: 0;
-  margin-bottom: -30px;
-}
+  .PI {
+    margin-top: 0;
+    margin-bottom: -30px;
+  }
 
-  .PT{
+  .PT {
     text-align: center;
   }
 
-  .PT h2{
+  .PT h2 {
     margin-top: -60px;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: -80px;
   }
 
   .P h2 {
     margin-top: 10px;
     margin-bottom: -25px;
-    font-size: 30px;
+    font-size: 25px;
     padding: 0;
     line-height: 55px;
   }
